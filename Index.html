@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#667eea" />
+  <title>Servicio de Gas</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Chart.js para gráfico de torta -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- jsPDF + autoTable para exportar PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.0/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Servicio de gas</h1>
+        <p id="subtitle">Registra tu pedido</p>
+      </div>
+      <!-- Toggle Modo Oscuro -->
+      <div class="theme-switch" title="Cambiar tema">
+        <span class="theme-icon">☀️</span>
+        <label class="switch">
+          <input type="checkbox" id="toggleTema" />
+          <span class="slider"></span>
+        </label>
+        <span class="theme-icon">🌙</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button id="tabUser" class="tab active">Solicitar</button>
+    <button id="tabAdmin" class="tab">Coordinador</button>
+  </nav>
+
+  <!-- SECCIÓN Solicitar -->
+  <section id="userSection" class="section active">
+    <form id="formPedido" class="card">
+      <h2>Registrar Pedido</h2>
+
+      <label for="nombres">Nombres</label>
+      <input type="text" id="nombres" required placeholder="Ej: Juan Carlos" autocomplete="given-name" />
+
+      <label for="apellidos">Apellidos</label>
+      <input type="text" id="apellidos" required placeholder="Ej: Pérez González" autocomplete="family-name" />
+
+      <label for="cantidad">Cantidad de bombonas</label>
+      <input type="number" id="cantidad" min="1" inputmode="numeric" required placeholder="Ej: 2" />
+
+      <label for="escalera">Número de escalera</label>
+      <select id="escalera" required>
+        <option value="">-- Seleccione --</option>
+        <option value="1Baja">1 Baja</option>
+        <option value="1Media">1 Media</option>
+        <option value="1Alta">1 Alta</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <label for="celular">Número de celular</label>
+      <input type="tel" id="celular" inputmode="tel" required placeholder="Ej: 0414-1234567" autocomplete="tel" />
+
+      <button type="submit" class="btn-primary btn-block">Guardar Pedido</button>
+      <button type="reset" class="btn-secondary btn-block">Limpiar</button>
+    </form>
+
+    <div id="mensaje" class="mensaje"></div>
+  </section>
+
+  <!-- SECCIÓN Coordinador -->
+  <section id="adminSection" class="section">
+    <div id="loginAdmin" class="card">
+      <h2>Acceso Coordinador</h2>
+      <label for="passAdmin">Contraseña</label>
+      <input type="password" id="passAdmin" placeholder="Ingrese la contraseña" />
+      <button id="btnLogin" class="btn-primary btn-block">Ingresar</button>
+      <p class="hint">Contraseña temporal: <code>admin123</code></p>
+    </div>
+
+    <div id="panelAdmin" class="hidden">
+      <!-- Estadísticas generales -->
+      <div class="stats-grid">
+        <div class="stat-card total">
+          <h3>Total General</h3>
+          <p class="stat-number" id="totalGeneral">0</p>
+          <small>bombonas</small>
+        </div>
+        <div class="stat-card personas">
+          <h3>Total Personas</h3>
+          <p class="stat-number" id="totalPersonas">0</p>
+          <small>registros</small>
+        </div>
+      </div>
+
+      <!-- Tarjetas por escalera -->
+      <div class="stats-escaleras" id="statsEscaleras"></div>
+
+      <!-- Gráfico de torta -->
+      <div class="card chart-card">
+        <h2>Distribución por Escalera</h2>
+        <div class="chart-container">
+          <canvas id="chartTorta"></canvas>
+        </div>
+      </div>
+
+      <!-- Tabla de pedidos -->
+      <div class="card">
+        <h2>Detalle por Escalera</h2>
+        <label for="filtroEscalera">Filtrar por escalera:</label>
+        <select id="filtroEscalera">
+          <option value="">-- Todas las escaleras --</option>
+          <option value="1Baja">1 Baja</option>
+          <option value="1Media">1 Media</option>
+          <option value="1Alta">1 Alta</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        <div id="listaPedidos" class="lista-pedidos"></div>
+
+        <!-- Acciones Coordinador -->
+        <div class="acciones-admin">
+          <div class="dropdown-pdf">
+            <button id="btnPdf" class="btn-primary btn-block">Exportar PDF</button>
+            <div id="menuPdf" class="menu-pdf hidden">
+              <button id="btnPdfResumen" class="btn-pdf-opcion">Resumen General</button>
+              <button id="btnPdfDetallado" class="btn-pdf-opcion">Lista Detallada</button>
+            </div>
+          </div>
+          <button id="btnExportar" class="btn-secondary btn-block">Exportar CSV</button>
+          <button id="btnBorrarTodo" class="btn-danger btn-block">Borrar todo</button>
+          <button id="btnLogout" class="btn-secondary btn-block">Cerrar sesión</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Datos guardados en el servidor</p><br>
+    <p>Elaborado por Francisco Indriago</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

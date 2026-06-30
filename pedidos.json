@@ -1,0 +1,328 @@
+{
+  "pedidos": [
+    {
+      "id": 1782621506864,
+      "nombres": "Francisco",
+      "apellidos": "Indriago",
+      "cantidad": 1,
+      "escalera": "1Media",
+      "celular": "04125896771",
+      "fecha": "2026-06-28T04:38:26.864Z"
+    },
+    {
+      "id": 1782625447534,
+      "nombres": "Nora",
+      "apellidos": "Loor",
+      "cantidad": 1,
+      "escalera": "2",
+      "celular": "04262375737",
+      "fecha": "2026-06-28T05:44:06.943Z"
+    },
+    {
+      "id": 1782625496027,
+      "nombres": "Xiomara",
+      "apellidos": "Zambrano",
+      "cantidad": 3,
+      "escalera": "1Media",
+      "celular": "041443321285",
+      "fecha": "2026-06-28T05:44:55.131Z"
+    },
+    {
+      "id": 1782625538203,
+      "nombres": "Juana",
+      "apellidos": "Sarmiento",
+      "cantidad": 1,
+      "escalera": "1Media",
+      "celular": "04123760194",
+      "fecha": "2026-06-28T05:45:37.881Z"
+    },
+    {
+      "id": 1782625588595,
+      "nombres": "Nanci",
+      "apellidos": "Bustamante",
+      "cantidad": 1,
+      "escalera": "1Media",
+      "celular": "04166131283",
+      "fecha": "2026-06-28T05:46:27.828Z"
+    },
+    {
+      "id": 1782625665132,
+      "nombres": "Critiano",
+      "apellidos": "Lopez",
+      "cantidad": 2,
+      "escalera": "4",
+      "celular": "04241987198",
+      "fecha": "2026-06-28T05:47:44.769Z"
+    },
+    {
+      "id": 1782625715924,
+      "nombres": "Maria",
+      "apellidos": "lopezz",
+      "cantidad": 1,
+      "escalera": "4",
+      "celular": "04241987198",
+      "fecha": "2026-06-28T05:48:35.303Z"
+    },
+    {
+      "id": 1782625767108,
+      "nombres": "Tello",
+      "apellidos": "Garcia",
+      "cantidad": 2,
+      "escalera": "2",
+      "celular": "04129952407",
+      "fecha": "2026-06-28T05:49:26.687Z"
+    },
+    {
+      "id": 1782625821695,
+      "nombres": "Maire",
+      "apellidos": "Sosa",
+      "cantidad": 1,
+      "escalera": "1Baja",
+      "celular": "04242911802",
+      "fecha": "2026-06-28T05:50:21.153Z"
+    },
+    {
+      "id": 1782625953754,
+      "nombres": "Juana",
+      "apellidos": "Sarmiento",
+      "cantidad": 1,
+      "escalera": "1Baja",
+      "celular": "04123760194",
+      "fecha": "2026-06-28T05:52:33.484Z"
+    },
+    {
+      "id": 1782626011779,
+      "nombres": "Wladimir",
+      "apellidos": "Sosa",
+      "cantidad": 1,
+      "escalera": "1Baja",
+      "celular": "04242399668",
+      "fecha": "2026-06-28T05:53:31.079Z"
+    },
+    {
+      "id": 1782626073829,
+      "nombres": "Froilan",
+      "apellidos": "Sosa",
+      "cantidad": 1,
+      "escalera": "1Baja",
+      "celular": "04264152366",
+      "fecha": "2026-06-28T05:54:33.821Z"
+    },
+    {
+      "id": 1782626130403,
+      "nombres": "Yenny",
+      "apellidos": "Triviño",
+      "cantidad": 1,
+      "escalera": "2",
+      "celular": "04241923009",
+      "fecha": "2026-06-28T05:55:29.790Z"
+    },
+    {
+      "id": 1782626176605,
+      "nombres": "Maria",
+      "apellidos": "Lopez",
+      "cantidad": 2,
+      "escalera": "1Alta",
+      "celular": "04241987198",
+      "fecha": "2026-06-28T05:56:15.727Z"
+    },
+    {
+      "id": 1782626221033,
+      "nombres": "Flora",
+      "apellidos": "Tovar",
+      "cantidad": 2,
+      "escalera": "1Baja",
+      "celular": "04241808136",
+      "fecha": "2026-06-28T05:57:00.324Z"
+    },
+    {
+      "id": 1782626293345,
+      "nombres": "Dorlys",
+      "apellidos": "Mendoza",
+      "cantidad": 1,
+      "escalera": "3",
+      "celular": "04247815410",
+      "fecha": "2026-06-28T05:58:13.197Z"
+    },
+    {
+      "id": 1782626363836,
+      "nombres": "Eulogio",
+      "apellidos": "Sosa",
+      "cantidad": 1,
+      "escalera": "1Baja",
+      "celular": "04263212585",
+      "fecha": "2026-06-28T05:59:23.620Z"
+    },
+    {
+      "id": 1782626403963,
+      "nombres": "Isabel",
+      "apellidos": "Hernandez",
+      "cantidad": 1,
+      "escalera": "3",
+      "celular": "04263190078",
+      "fecha": "2026-06-28T06:00:03.316Z"
+    },
+    {
+      "id": 1782626455904,
+      "nombres": "Freddy",
+      "apellidos": "Torrealba",
+      "cantidad": 1,
+      "escalera": "2",
+      "celular": "04142535495",
+      "fecha": "2026-06-28T06:00:55.584Z"
+    },
+    {
+      "id": 1782626587030,
+      "nombres": "Marilyn",
+      "apellidos": "Alamada",
+      "cantidad": 1,
+      "escalera": "1Alta",
+      "celular": "04141212088",
+      "fecha": "2026-06-28T06:03:06.450Z"
+    },
+    {
+      "id": 1782626650980,
+      "nombres": "Merleni",
+      "apellidos": "Meneses",
+      "cantidad": 1,
+      "escalera": "4",
+      "celular": "04165281690",
+      "fecha": "2026-06-28T06:04:10.706Z"
+    },
+    {
+      "id": 1782626696419,
+      "nombres": "Alba",
+      "apellidos": "La Rosa",
+      "cantidad": 1,
+      "escalera": "4",
+      "celular": "04126624319",
+      "fecha": "2026-06-28T06:04:55.856Z"
+    },
+    {
+      "id": 1782626756552,
+      "nombres": "Clider",
+      "apellidos": "Guzman",
+      "cantidad": 1,
+      "escalera": "1Alta",
+      "celular": "04143659131",
+      "fecha": "2026-06-28T06:05:56.539Z"
+    },
+    {
+      "id": 1782626818505,
+      "nombres": "Yesenia",
+      "apellidos": "Murillo",
+      "cantidad": 1,
+      "escalera": "4",
+      "celular": "04164098114",
+      "fecha": "2026-06-28T06:06:58.257Z"
+    },
+    {
+      "id": 1782626868057,
+      "nombres": "Steve",
+      "apellidos": "Hernandez",
+      "cantidad": 1,
+      "escalera": "1Alta",
+      "celular": "04226326041",
+      "fecha": "2026-06-28T06:07:47.239Z"
+    },
+    {
+      "id": 1782626920724,
+      "nombres": "Luis",
+      "apellidos": "Quintero",
+      "cantidad": 1,
+      "escalera": "2",
+      "celular": "04263190558",
+      "fecha": "2026-06-28T06:08:40.041Z"
+    },
+    {
+      "id": 1782626966166,
+      "nombres": "Vladimir",
+      "apellidos": "Peña",
+      "cantidad": 2,
+      "escalera": "1Alta",
+      "celular": "04125725323",
+      "fecha": "2026-06-28T06:09:26.102Z"
+    },
+    {
+      "id": 1782627007014,
+      "nombres": "marleni",
+      "apellidos": "Meneses",
+      "cantidad": 2,
+      "escalera": "3",
+      "celular": "04122129159",
+      "fecha": "2026-06-28T06:10:06.382Z"
+    },
+    {
+      "id": 1782627091475,
+      "nombres": "Yulimar",
+      "apellidos": "Aguilar",
+      "cantidad": 1,
+      "escalera": "4",
+      "celular": "04120988756",
+      "fecha": "2026-06-28T06:11:31.248Z"
+    },
+    {
+      "id": 1782627135948,
+      "nombres": "Jose",
+      "apellidos": "Rodriguez",
+      "cantidad": 2,
+      "escalera": "1Media",
+      "celular": "04164275748",
+      "fecha": "2026-06-28T06:12:15.002Z"
+    },
+    {
+      "id": 1782627204096,
+      "nombres": "Clemente",
+      "apellidos": "Parra",
+      "cantidad": 2,
+      "escalera": "4",
+      "celular": "04142839632",
+      "fecha": "2026-06-28T06:13:23.273Z"
+    },
+    {
+      "id": 1782627428666,
+      "nombres": "Carlos",
+      "apellidos": "Lara",
+      "cantidad": 2,
+      "escalera": "1Media",
+      "celular": "04120378504",
+      "fecha": "2026-06-28T06:17:07.864Z"
+    },
+    {
+      "id": 1782676587520,
+      "nombres": "Armenia",
+      "apellidos": "Kedjidjian",
+      "cantidad": 4,
+      "escalera": "1Media",
+      "celular": "04122302908",
+      "fecha": "2026-06-28T19:56:27.419Z"
+    },
+    {
+      "id": 1782677013177,
+      "nombres": "Juan",
+      "apellidos": "De Jesús",
+      "cantidad": 4,
+      "escalera": "4",
+      "celular": "04123674589",
+      "fecha": "2026-06-28T20:03:33.068Z"
+    },
+    {
+      "id": 1782677357861,
+      "nombres": "Estevan",
+      "apellidos": "Matos",
+      "cantidad": 3,
+      "escalera": "2",
+      "celular": "15815922",
+      "fecha": "2026-06-28T20:09:17.840Z"
+    },
+    {
+      "id": 1782677481833,
+      "nombres": "Juan",
+      "apellidos": "Gonzalez",
+      "cantidad": 4,
+      "escalera": "4",
+      "celular": "23825761",
+      "fecha": "2026-06-28T20:11:21.537Z"
+    }
+  ]
+}
