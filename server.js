@@ -7,7 +7,9 @@ const bcrypt = require('bcryptjs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en puerto ${PORT}`);
+});
 // CLAVE SECRETA - Cambiar en producción (usar variable de entorno)
 const JWT_SECRET = process.env.JWT_SECRET || 'cambia_esta_clave_secreta_por_una_muy_larga_y_aleatoria_2026';
 const ADMIN_PASSWORD_PLAIN = process.env.ADMIN_PASSWORD || 'admin123';
