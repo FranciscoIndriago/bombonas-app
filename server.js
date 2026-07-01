@@ -1,15 +1,22 @@
 const express = require('express');
+const app = express();
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
-const app = express();
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en puerto ${PORT}`);
 });
+// Para poder leer JSON en el body
+app.use(express.json());
+
+// Para servir archivos estáticos (index.html, styles.css)
+app.use(express.static('public'));  // o la carpeta donde tengas index.html y styles.css
+
 // CLAVE SECRETA - Cambiar en producción (usar variable de entorno)
 const JWT_SECRET = process.env.JWT_SECRET || 'cambia_esta_clave_secreta_por_una_muy_larga_y_aleatoria_2026';
 const ADMIN_PASSWORD_PLAIN = process.env.ADMIN_PASSWORD || 'admin123';
